@@ -18,7 +18,7 @@ public class ReadData {
 	public XSSFRow row;
 	public XSSFCell cell;
 
-	String path = "E:\\Post Graduate\\Velocity\\Git\\AutomationPractice\\MyStoreProject\\Data\\Testdata.xlsx";
+	String path = ".\\Data\\Testdata.xlsx";
 
 	public String readDataFromExcel(String sheetname, int row, int Cell) throws IOException {
 		file = new File(path);

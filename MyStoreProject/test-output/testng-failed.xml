@@ -1,63 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.mystore.Utility.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.mystore.testcases.HomePageTest">
-        <methods>
-          <include name="wishListTest"/>
-          <include name="setUp"/>
-          <include name="oderAndHistoryTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.HomePageTest -->
-      <class name="com.mystore.testcases.EndToEndTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="endToEndTest"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.EndToEndTest -->
-      <class name="com.mystore.testcases.AddToCartPageTest">
-        <methods>
-          <include name="addToCartTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.AddToCartPageTest -->
-      <class name="com.mystore.testcases.SearchResultPageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="productAvailabilityTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.SearchResultPageTest -->
       <class name="com.mystore.testcases.LoginPageTest">
         <methods>
-          <include name="verifyCreateAccountTest"/>
           <include name="loginTest" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.mystore.testcases.LoginPageTest -->
-      <class name="com.mystore.testcases.OrderSummaryTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="verifyTotalPrice"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.OrderSummaryTest -->
-      <class name="com.mystore.testcases.IndexPageTest">
-        <methods>
-          <include name="verifyPageTitle"/>
-          <include name="verifyLogoTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.mystore.testcases.IndexPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
